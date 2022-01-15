@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Box</title>
+    <style>
+       *{
+           margin: 0;
+           padding: 0;
+       }
+       p{
+           font-weight: 200px;
+           line-height: 1.5;
+        
+       }
+       h3{
+           font-weight: 400px;
+           margin-top: 0;
+       }
+       .container{
+           display: flex;
+           /*height: 600px;*/
+          /* align-items: stretch;*/
+           /*align-items: flex-start;*/
+           /*align-items: flex-end;*/
+           /*align-items: center;*/
+          /* flex-direction: row;*/
+          /*flex-direction: row-reverse;*/
+          /*flex-direction: column;*/
+          /*flex-direction: column-reverse;*/
+          /*justify-content: space-between;*/
+          /*justify-content: space-around;*/
+          /*justify-content: space-evenly;*/
+          /*justify-content: flex-start;*/
+          /*justify-content: flex-end;*/
+          /*justify-content: center;*/
+          margin-right: -30px;
+       }
+     .container div{
+         background-color: aqua;
+         border: 1px solid green;
+         padding: 1.6rem;
+         /*flex-basis: 20%;*/
+         margin-right: 30px;
+     }
+
+     .item-1{
+         /*flex: 1;*/
+     }
+     .item-2{
+       /* flex: 1;*/
+     }
+
+     .item-3{
+       /* flex: 1;*/  
+     }
+
+     @media(max-width:640px){
+         .container{
+             flex-direction: column;
+         }
+     }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item-1">
+            <h3>My card 1</h3>
+            <p>hello,i am vinay here ajhdajahdh ajdjajdhjha jdahdhad ahsshashahs
+                dbabdabdba badadhahd
+            </p>
+        </div>
+        <div class="item-2">
+            <h3>My card 2</h3>
+            <p>hello,i am vinay here ajhdajahdh ajdjajdhjha jdahdhad ahsshashahs
+                dbabdabdba badadhahd
+            </p>
+        </div>
+        <div class="item-3">
+            <h3>My card 3</h3>
+            <p>hello,i am vinay here ajhdajahdh ajdjajdhjha jdahdhad ahsshashahs
+                dbabdabdba badadhahd
+            </p>
+        </div>
+    </div>
+    
+</body>
+</html>
